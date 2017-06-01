@@ -1,0 +1,531 @@
+html, body {
+    margin: 0;
+    font-family: font95935, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.normal-site {
+    width: 100%;
+    left: 0vw;
+    position: relative;
+}
+
+.kundvagn-site {
+    width: 50%;
+    height: 1160px;
+    position: absolute;
+    z-index: 4;
+    right: 0vw;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.kundvagn-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.kundvagn-content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.clear {
+    height: 20px;
+    width: auto;
+    position: absolute;
+    left: 40vw;
+    top: 11.8vh;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    color: red;
+    z-index: 2;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-text {
+    font-weight: bold;
+    color: #2196F3;
+    font-size: 40px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-bar {
+    height: 44px;
+    width: 400px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-indent: 20px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.search {
+    height: 44px;
+    width: 60px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    border-left: none;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.kundvagn {
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.kundvagn-ikon {
+    height: 50px;
+    width: 50px;
+}
+
+.number {
+    position: absolute;
+    z-index: 3;
+    left: 88vw;
+    top: 1vh;
+    color: #2196F3;
+}
+
+.kundvagn-tom {
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1565C0;
+    height: 40px;
+    width: 100%;
+    color: #FFF;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    font-family: font95935, sans-serif;
+}
+
+.dropbtn {
+    background-color: #1565C0;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown {
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2196F3;
+}
+
+.shade {
+    height: 1000px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFF;
+    width: 70%;
+    height: 970px;
+    margin-top: 20px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.produkter-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    width: 20%;
+    margin-top: 40px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.produkter {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.ad {
+    width: 70%;
+    height: 20%;
+    margin-top: 40px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.processor {
+    width: 90%;
+    height: 20%;
+    margin-top: 40px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.processor-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.processor-picture {
+
+}
+
+.intel-text {
+    margin-left: 50px;
+    color: #2196F3;
+}
+
+.add-to-cart {
+    height: 40px;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    font-weight: bold;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.displaynone {
+    opacity: 0.5;
+}
+
+.displaynone1 {
+    display: none;
+}
+
+.kundvagnAnimation {
+    animation: 0.3s 1;
+    animation-fill-mode: forwards;
+    animation-name: kundvagn;
+}
+
+.kundvagnAnimation-back {
+    animation: 0.3s 1;
+    animation-fill-mode: forwards;
+    animation-name: kundvagn-back;
+}
+
+.cover {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 0vw;
+}
+
+.kundvagn-text {
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.kundvagn_none {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.sorry {
+    margin-top: 10vh;
+}
+
+.moderkort-picture {
+    height: 170px;
+    width: 170px;
+    margin-right: 10px;
+}
+
+@keyframes kundvagn {
+    from {
+        left: 0vw;
+    }
+    to {
+        left: -50%;
+    }
+}
+
+@keyframes kundvagn-back {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 0vw;
+    }
+}
+
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (orientation: portrait) {
+    .search-bar {
+        width: 100px;
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .kundvagn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .kundvagn-ikon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .dropbtn {
+        width: auto;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    nav {
+        width: 358px;
+    }
+
+    .main {
+        height: 640px;
+    }
+
+    .shade {
+        height: 640px;
+    }
+
+    .main-content {
+        width: 80%;
+        height: 610px;
+    }
+
+    .kundvagn-site {
+        height: 761px;
+    }
+
+    .main-content {
+        font-size: 10px;
+    }
+
+    .produkter-list {
+        display: none;
+    }
+
+    .produkter {
+        width: 70%;
+        height: auto;
+        margin-top: -20px;
+    }
+
+    .processor {
+        height: 15%;
+        width: 100%;
+    }
+
+    .processor-picture {
+        width: 100px;
+        height: 60px;
+    }
+
+    .flex-column {
+        margin-top: -10px;
+    }
+
+    .intel-text {
+        margin-left: 20px;
+        margin-top: 0px;
+        font-size: 15px;
+    }
+
+    .add-to-cart {
+        margin-left: 5px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        position: inherit;
+        z-index: 2;
+    }
+
+    .number {
+        top: -1vh;
+        left: 92vw;
+    }
+
+    .clear {
+        top: 13.5vh;
+        left: 44vw;
+    }
+
+    .kundvagn-tom {
+        font-size: 15px;
+    }
+
+    .moderkort-picture {
+        width: 100px;
+        height: 60px;
+        margin-left: 4px;
+    }
+
+    .sorry {
+        font-size: 10px;
+    }
+}
+
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px) {
+
+    .shade {
+        height: 1224px;
+    }
+
+    .main {
+        height: 1224px;
+    }
+
+    .main-content {
+        width: 80%;
+        height: 1000px;
+    }
+
+    .sorry {
+        margin-top: 5vh;
+    }
+
+    .kundvagn-site {
+        height: 1366px;
+    }
+
+    .number {
+        top: 0vh;
+        left: 91vw;
+    }
+
+    .clear {
+        top: 6.8vh;
+        left: 44vw;
+    }
+}

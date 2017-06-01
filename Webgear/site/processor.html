@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="Utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="https://www.fontify.me/wf/c5c344fe9298c424296ec680f489b96e" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Webgear</title>
+</head>
+<body>
+<div class="container">
+    <div class="cover displaynone1" onclick="removeKundvagn()">
+    </div>
+    <div class="kundvagn-site displaynone1">
+        <div class="kundvagn-header">
+            <h3 class="kundvagn-text kundvagn_none"> Kundvagn </h3>
+        </div>
+        <div class="kundvagn-content">
+            <h5 class="kundvagn-tom"> Din kundvagn är tom. </h5>
+            <button class="clear displaynone1" onclick="remove()">X</button>
+        </div>
+    </div>
+    <div class="normal-site">
+        <header>
+            <a href="./index.html"><h2 class="header-text">Webgear</h2></a>
+            <div class="search-container">
+                <input type="search" class="search-bar" placeholder="Search..." onsearch="searchBar()"> </input>
+                <button class="search" onclick="searchBar()"><img class="search-icon" src="./img/search.png"></img>
+                </button>
+            </div>
+            <button class="kundvagn" onclick="kundvagnAnimation(); window.setTimeout(timeOut, 300)"><img
+                    class="kundvagn-ikon" src="./img/kundvagn.svg"><h5 class="number displaynone1">1</h5></img></button>
+        </header>
+        <nav>
+            <div class="nav-content">
+                <div class="dropdown" onmouseover="menuOpen()" onmouseout="menuClose()">
+                    <button class="dropbtn">Komponenter</button>
+                    <div class="dropdown-content">
+                        <a href="#">Datorer</a>
+                        <a href="#">Ljud &amp; Bild</a>
+                        <a href="#">Dator tillbehör</a>
+                        <a href="#">Mobil</a>
+                        <a href="#">Foto &amp; Video</a>
+                        <a href="#">Nätverk</a>
+                        <a href="#">Alla produkter</a>
+                    </div>
+                </div>
+                <div class="dropdown" onmouseover="menuOpen()" onmouseout="menuClose()">
+                    <button class="dropbtn">Varumärken</button>
+                    <div class="dropdown-content">
+                        <a href="#">ASUS</a>
+                        <a href="#">Lenovo</a>
+                        <a href="#">Dell</a>
+                        <a href="#">Apple</a>
+                        <a href="#">Samsung</a>
+                        <a href="#">Acer</a>
+                        <a href="#">HP</a>
+                    </div>
+                </div>
+                <div class="dropdown" onmouseover="menuOpen()" onmouseout="menuClose()">
+                    <button class="dropbtn">Varuhus</button>
+                    <div class="dropdown-content">
+                        <a href="#">Göteborg</a>
+                        <a href="#">Stockholm</a>
+                        <a href="#">Malmö</a>
+                    </div>
+                </div>
+                <div class="dropdown" onmouseover="menuOpen()" onmouseout="menuClose()">
+                    <button class="dropbtn">Support</button>
+                    <div class="dropdown-content">
+                        <a href="#">Om oss</a>
+                        <a href="#">Kundservice</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="shade">
+            <div class="main">
+                <div class="main-content">
+                    <ul class="produkter-list">
+                        <a href="#">Datorer</a>
+                        <a href="#">Ljud &amp; Bild</a>
+                        <a href="#">Dator tillbehör</a>
+                        <a href="#">Mobil</a>
+                        <a href="#">Foto &amp; Video</a>
+                        <a href="#">Nätverk</a>
+                    </ul>
+                    <div class="produkter">
+                        <div class="processor">
+                            <div class="processor-content">
+                                <div class="flex-column">
+                                    <h3 class="intel-text"> Intel i7 Processor </h3>
+                                    <button class="add-to-cart" onclick="addProcessor()"> Lägg till i kundvagnen
+                                    </button>
+                                </div>
+                                <img class="processor-picture" src="./img/processor.jpg"></img>
+                            </div>
+                        </div>
+                        <div class="processor">
+                            <div class="processor-content">
+                                <div class="flex-column">
+                                    <h3 class="intel-text"> Intel i7 Processor </h3>
+                                    <button class="add-to-cart" onclick="addProcessor()"> Lägg till i kundvagnen
+                                    </button>
+                                </div>
+                                <img class="processor-picture" src="./img/processor.jpg"></img>
+                            </div>
+                        </div>
+                        <div class="processor">
+                            <div class="processor-content">
+                                <div class="flex-column">
+                                    <h3 class="intel-text"> Intel i7 Processor </h3>
+                                    <button class="add-to-cart" onclick="addProcessor()"> Lägg till i kundvagnen
+                                    </button>
+                                </div>
+                                <img class="processor-picture" src="./img/processor.jpg"></img>
+                            </div>
+                        </div>
+                        <div class="processor">
+                            <div class="processor-content">
+                                <div class="flex-column">
+                                    <h3 class="intel-text"> Intel i7 Processor </h3>
+                                    <button class="add-to-cart" onclick="addProcessor()"> Lägg till i kundvagnen
+                                    </button>
+                                </div>
+                                <img class="processor-picture" src="./img/processor.jpg"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
