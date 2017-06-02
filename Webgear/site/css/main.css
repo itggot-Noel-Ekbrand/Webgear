@@ -274,6 +274,23 @@ nav {
 .ipad-ad {
     display: none;
 }
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -45px -5px;
+}
 
 .produkter-list {
     display: flex;
@@ -346,6 +363,11 @@ nav {
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  margin-top: 10px;
 }
 
 .displaynone {
