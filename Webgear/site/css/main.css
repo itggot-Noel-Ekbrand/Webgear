@@ -39,8 +39,23 @@ html, body {
 
 .kundvagn-content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     height: 100%;
+}
+
+.kop {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2196F3;
 }
 
 .clear {
@@ -55,7 +70,6 @@ html, body {
     font-size: 15px;
     color: red;
     z-index: 2;
-
 }
 
 header {
@@ -67,6 +81,7 @@ header {
 
 a {
     text-decoration: none;
+    color: #2196F3;
 }
 
 .header-text {
@@ -130,6 +145,7 @@ input[type="search"]::-webkit-search-cancel-button {
     left: 88vw;
     top: 1vh;
     color: #2196F3;
+    font-size: 15px;
 }
 
 .kundvagn-tom {
@@ -201,8 +217,11 @@ nav {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover {
     background-color: #2196F3;
+}
+
+.kundservice {
 }
 
 .shade {
@@ -226,13 +245,34 @@ nav {
 .main-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #FFF;
     width: 70%;
     height: 970px;
     margin-top: 20px;
     border: 1px solid grey;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFF;
+    width: 70%;
+    height: 970px;
+    margin-top: 20px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.ad-picture {
+    margin-top: 40px;
+}
+
+.ipad-ad {
+    display: none;
 }
 
 .produkter-list {
@@ -258,12 +298,15 @@ nav {
     width: 100%;
 }
 
-.ad {
-    width: 70%;
-    height: 20%;
+.redirect-i7 {
     margin-top: 40px;
-    border: 1px solid grey;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #FFF;
+    height: 50px;
+    width: 400px;
+    border-radius: 2px;
+    padding: 10px 16px;
 }
 
 .processor {
@@ -382,6 +425,7 @@ and (orientation: portrait) {
 
     .header-text {
         font-size: 30px;
+        color: #FF9800;
     }
 
     .search {
@@ -406,31 +450,44 @@ and (orientation: portrait) {
 
     nav {
         width: 358px;
+        background-color: #FF9800;
     }
 
-    .main {
+    .dropdown:hover, .dropbtn {
+        background-color: #FF9800;
+    }
+
+    .main, .shade {
         height: 640px;
     }
 
-    .shade {
-        height: 640px;
-    }
-
-    .main-content {
+    .main-content, .main-content1 {
         width: 80%;
         height: 610px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ad-picture {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .redirect-i7 {
+        width: auto;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    .ipad-ad, .produkter-list {
+        display: none;
     }
 
     .kundvagn-site {
         height: 761px;
-    }
-
-    .main-content {
-        font-size: 10px;
-    }
-
-    .produkter-list {
-        display: none;
     }
 
     .produkter {
@@ -457,6 +514,7 @@ and (orientation: portrait) {
         margin-left: 20px;
         margin-top: 0px;
         font-size: 15px;
+        color: #FF9800;
     }
 
     .add-to-cart {
@@ -472,11 +530,16 @@ and (orientation: portrait) {
     .number {
         top: -1vh;
         left: 92vw;
+        color: #FF9800;
     }
 
     .clear {
         top: 13.5vh;
         left: 44vw;
+    }
+
+    .kop {
+        color: #FF9800;
     }
 
     .kundvagn-tom {
@@ -492,23 +555,50 @@ and (orientation: portrait) {
     .sorry {
         font-size: 10px;
     }
+
+    .dropdown-content a {
+        padding: 8px 10px;
+    }
+
+    .kundservice {
+        font-size: 12px;
+    }
+
+    .dropdown-content {
+        min-width: 0px;
+    }
 }
 
 @media only screen
 and (min-device-width: 1024px)
 and (max-device-width: 1366px) {
 
-    .shade {
-        height: 1224px;
-    }
-
-    .main {
+    .shade, .main {
         height: 1224px;
     }
 
     .main-content {
         width: 80%;
         height: 1000px;
+    }
+
+    .ad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ad-picture {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .ipad-ad {
+        display: inherit;
+    }
+
+    nav, .dropdown:hover, .dropbtn {
+        background-color: #F44336;
     }
 
     .sorry {
@@ -522,10 +612,16 @@ and (max-device-width: 1366px) {
     .number {
         top: 0vh;
         left: 91vw;
+        color: #F44336;
     }
 
     .clear {
         top: 6.8vh;
         left: 44vw;
     }
+
+    .kop, .intel-text, .header-text, a {
+        color: #F44336;
+    }
+
 }

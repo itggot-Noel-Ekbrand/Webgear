@@ -18,18 +18,20 @@
         </div>
         <div class="kundvagn-content">
             <h5> Din kundvagn är tom. </h5>
+            <button class="kop displaynone1"> Köp </button>
         </div>
     </div>
     <div class="normal-site">
         <header>
             <a href="./index.html"><h2 class="header-text">Webgear</h2></a>
             <div class="search-container">
-                <input type="search" class="search-bar" placeholder="Search..." onsearch="searchBar()"> </input>
-                <button class="search" onclick="searchBar()"><img class="search-icon" src="./img/search.png"></img>
+                <input type="search" class="search-bar" placeholder="Search..." onsearch="searchBar()"/>
+                <button class="search" onclick="searchBar()"><img class="search-icon" src="./img/search.png" alt="search-ikon"/>
                 </button>
             </div>
             <button class="kundvagn" onclick="kundvagnAnimation(); window.setTimeout(timeOut, 300)">
-              <img class="kundvagn-ikon" src="./img/kundvagn.svg"><h5 class="number displaynone1">1</h5></img></button>
+              <img class="kundvagn-ikon" src="./img/kundvagn.svg" alt="kundvagn-ikon"/></button>
+              <h5 class="number displaynone1">1</h5>
         </header>
         <nav>
             <div class="nav-content">
@@ -68,7 +70,7 @@
                 <div class="dropdown" onmouseover="menuOpen()" onmouseout="menuClose()">
                     <button class="dropbtn">Support</button>
                     <div class="dropdown-content">
-                        <a href="#">Om oss</a>
+                        <a class="kundservice" href="#">Om oss</a>
                         <a class="kundservice" href="#">Kundservice</a>
                     </div>
                 </div>
@@ -76,9 +78,11 @@
         </nav>
         <div class="shade">
             <div class="main" id="main">
-                <div class="main-content">
-                    <div class="ad">
-                    </div>
+                <div class="main-content1">
+                    <img src="./img/ad.png" class="ad-picture" alt="ad-picture"/>
+                    <button onclick="reDirect()" class="redirect-i7"> BUY INTEL i7 PROCESSOR NOW! </button>
+                    <img src="./img/sprites.png" alt="socialmedia"/>
+                    <img src="./img/ipadad.jpg" class="ipad-ad" width="400" alt="carad"/>
                 </div>
             </div>
         </div>

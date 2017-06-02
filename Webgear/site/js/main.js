@@ -33,18 +33,25 @@ function addProcessor() {
     document.querySelector(".number").classList.remove("displaynone1");
     document.querySelector(".kundvagn-tom").innerHTML = "Intel i7 Processor x 1";
     document.querySelector(".clear").classList.remove("displaynone1");
+    document.querySelector(".kop").classList.remove("displaynone1");
 }
 
 function addModerkort() {
     document.querySelector(".number").classList.remove("displaynone1");
     document.querySelector(".kundvagn-tom").innerHTML = "AM1M-A x 1";
     document.querySelector(".clear").classList.remove("displaynone1");
+    document.querySelector(".kop").classList.remove("displaynone1");
 }
 
 function remove() {
     document.querySelector(".number").classList.add("displaynone1");
     document.querySelector(".kundvagn-tom").innerHTML = "Din kundvagn är tom.";
     document.querySelector(".clear").classList.add("displaynone1");
+    document.querySelector(".kop").classList.add("displaynone1");
+}
+
+function reDirect() {
+  window.location.replace("processor.html");
 }
 
 function searchBar() {

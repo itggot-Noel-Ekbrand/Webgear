@@ -18,6 +18,7 @@
         </div>
         <div class="kundvagn-content">
             <h5 class="kundvagn-tom"> Din kundvagn är tom. </h5>
+            <button class="kop displaynone1"> Köp </button>
             <button class="clear displaynone1" onclick="remove()">X</button>
         </div>
     </div>
@@ -25,12 +26,13 @@
         <header>
             <a href="./index.html"><h2 class="header-text">Webgear</h2></a>
             <div class="search-container">
-                <input type="search" class="search-bar" placeholder="Search..." onsearch="searchBar()"> </input>
-                <button class="search" onclick="searchBar()"><img class="search-icon" src="./img/search.png"></img>
+                <input type="search" class="search-bar" placeholder="Search..." onsearch="searchBar()"/>
+                <button class="search" onclick="searchBar()"><img class="search-icon" src="./img/search.png" alt="search-icon"/>
                 </button>
             </div>
-            <button class="kundvagn" onclick="kundvagnAnimation(); window.setTimeout(timeOut, 300)"><img
-                    class="kundvagn-ikon" src="./img/kundvagn.svg"><h5 class="number displaynone1">1</h5></img></button>
+            <button class="kundvagn" onclick="kundvagnAnimation(); window.setTimeout(timeOut, 300)">
+              <img class="kundvagn-ikon" src="./img/kundvagn.svg" alt="kundvagn-ikon"/></button>
+                    <h5 class="number displaynone1">1</h5>
         </header>
         <nav>
             <div class="nav-content">
@@ -94,7 +96,7 @@
                                     <button class="add-to-cart" onclick="addProcessor()"> Lägg till i kundvagnen
                                     </button>
                                 </div>
-                                <img class="processor-picture" src="./img/processor.jpg"></img>
+                                <img class="processor-picture" src="./img/processor.jpg" alt="processor-picture"/>
                             </div>
                         </div>
                         <div class="processor">
@@ -104,7 +106,7 @@
                                     <button class="add-to-cart" onclick="addProcessor()"> Lägg till i kundvagnen
                                     </button>
                                 </div>
-                                <img class="processor-picture" src="./img/processor.jpg"></img>
+                                <img class="processor-picture" src="./img/processor.jpg" alt="processor-picture"/>
                             </div>
                         </div>
                         <div class="processor">
@@ -114,7 +116,7 @@
                                     <button class="add-to-cart" onclick="addProcessor()"> Lägg till i kundvagnen
                                     </button>
                                 </div>
-                                <img class="processor-picture" src="./img/processor.jpg"></img>
+                                <img class="processor-picture" src="./img/processor.jpg" alt="processor-picture"/>
                             </div>
                         </div>
                         <div class="processor">
@@ -124,7 +126,7 @@
                                     <button class="add-to-cart" onclick="addProcessor()"> Lägg till i kundvagnen
                                     </button>
                                 </div>
-                                <img class="processor-picture" src="./img/processor.jpg"></img>
+                                <img class="processor-picture" src="./img/processor.jpg" alt="processor-picture"/>
                             </div>
                         </div>
                     </div>
